@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.version3.StudentTeacherEvaluationForm">
+   <left>
+      <VBox prefHeight="626.0" prefWidth="366.0" style="-fx-background-color: #265bb1;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="94.0" prefWidth="366.0" />
+            <VBox prefHeight="318.0" prefWidth="366.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="127.0" prefWidth="366.0" text="  Student Profile" textFill="#e7e5e5">
+                     <font>
+                        <Font name="Berlin Sans FB" size="49.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="203.0" prefWidth="366.0">
+                     <children>
+                        <VBox layoutX="54.0" layoutY="-4.0" prefHeight="200.0" prefWidth="284.0">
+                           <children>
+                              <HBox prefHeight="58.0" prefWidth="260.0">
+                                 <children>
+                                    <Label prefHeight="67.0" prefWidth="94.0" text="Name:-" textFill="#f4f3f3">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblName" prefHeight="52.0" prefWidth="190.0" textFill="#bcbc09">
+                                       <font>
+                                          <Font name="Bell MT Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="58.0" prefWidth="260.0">
+                                 <children>
+                                    <Label prefHeight="67.0" prefWidth="94.0" text="ID:-" textFill="#f4f3f3">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblId" prefHeight="53.0" prefWidth="191.0" textFill="#bcbc09">
+                                       <font>
+                                          <Font name="Bell MT Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="260.0">
+                                 <children>
+                                    <Label prefHeight="67.0" prefWidth="94.0" text="Dept:-" textFill="#eae5e5">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblDept" prefHeight="48.0" prefWidth="190.0" textFill="#bcbc09">
+                                       <font>
+                                          <Font name="Bell MT Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="127.0" prefHeight="53.0" prefWidth="260.0">
+                                 <children>
+                                    <Label prefHeight="67.0" prefWidth="94.0" text="Phone:-" textFill="#eae5e5">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblPhone" prefHeight="48.0" prefWidth="189.0" textFill="#bcbc09">
+                                       <font>
+                                          <Font name="Bell MT Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnSignOut" layoutX="190.0" layoutY="121.0" mnemonicParsing="false" onAction="#toSignOut" prefHeight="28.0" prefWidth="117.0" style="-fx-background-color: #265bb1; -fx-border-color: white; -fx-border-radius: 20;" text="Sign Out" textFill="#e7e7e7">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnBack" layoutX="47.0" layoutY="121.0" mnemonicParsing="false" onAction="#toStudentProfile" prefHeight="28.0" prefWidth="117.0" style="-fx-background-color: #265bb1; -fx-border-color: white; -fx-border-radius: 20;" text="Back" textFill="#e7e7e7">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="109.0" layoutY="8.0" prefHeight="30.0" prefWidth="340.0" text="Fill the following Evaluation form">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="44.0" prefHeight="17.0" prefWidth="411.0" text="Legends     4-Very Excellent     3-Excellent      2- Very good       1.good" textFill="#1064ff">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <FlowPane layoutX="1.0" layoutY="70.0" prefHeight="555.0" prefWidth="570.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="556.0" prefWidth="570.0" vbarPolicy="NEVER">
+                     <content>
+                        <VBox prefHeight="1200.0" prefWidth="642.0" spacing="10.0">
+                           <children>
+                              <VBox prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q1. The teacher shows knowledge and understanding" />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r1d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r1c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r1b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r1a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q2.The Teacher plans effectively and sets clear objective of the course material" />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r2d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r2c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r2b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r2a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="106.0" prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q3. The teacher use differnet medium of Instructions " />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r3d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r3c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r3b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r3a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="202.0" prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q4. The teacher Explain the course material effectively" />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r4d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r4c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r4b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r4a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="298.0" prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q5.  The teacher attend class on time " />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r5d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r5c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r5b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r5a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="90.0" prefWidth="0.0" spacing="60.0" style="-fx-background-color: #bcbc09;">
+                                 <children>
+                                    <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#Submit" prefHeight="42.0" prefWidth="109.0" style="-fx-background-color: #bcbc09; -fx-border-radius: 20; -fx-border-color: white;" text="Submit" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets right="90.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </FlowPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

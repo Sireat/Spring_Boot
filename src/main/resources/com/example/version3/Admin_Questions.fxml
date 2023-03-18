@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="939.0" style="-fx-background-radius: 5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.version3.AdminQuestions">
+   <left>
+      <VBox prefHeight="626.0" prefWidth="283.0" style="-fx-background-color: #265bb1;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="626.0" prefWidth="283.0" style="-fx-background-color: #265bb1;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="172.0" prefWidth="218.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/pngwing.com.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="215.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="78.0" text="Admin" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="283.0" />
+                  <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#toDashboard" prefHeight="54.0" prefWidth="284.0" style="-fx-background-color: #265bb1;" text="Dashboard" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Home_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTeachers" lineSpacing="10.0" mnemonicParsing="false" onAction="#toTeachers" prefHeight="48.0" prefWidth="283.0" style="-fx-background-color: #265bb1;" text="   Teachers  " textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnStudents" lineSpacing="10.0" mnemonicParsing="false" onAction="#toStudents" prefHeight="48.0" prefWidth="283.0" style="-fx-background-color: #265bb1;" text="   Students  " textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnQuestions" mnemonicParsing="false" onAction="#toQuestions" prefHeight="38.0" prefWidth="295.0" text="    Questions ">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Open_Envelope_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="67.0" prefWidth="283.0" />
+                  <Button fx:id="btnSignOut" graphicTextGap="15.0" lineSpacing="4.0" mnemonicParsing="false" onAction="#toSignOut" prefHeight="43.0" prefWidth="286.0" style="-fx-background-color: #265bb1;" text="Sign out    " textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Sign_Out_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="74.0" prefWidth="218.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="88.0" prefWidth="658.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="1.0" prefHeight="31.0" prefWidth="656.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label prefHeight="50.0" prefWidth="318.0" text="Evaluation Questions" textFill="#265bb1">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="35.0" layoutY="57.0" prefHeight="17.0" prefWidth="411.0" text="Legends     4-Very Excellent     3-Excellent      2- Very good       1.good" textFill="#1064ff">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <FlowPane layoutX="3.0" layoutY="88.0" prefHeight="555.0" prefWidth="570.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="530.0" prefWidth="650.0" vbarPolicy="NEVER">
+                     <content>
+                        <VBox prefHeight="1198.0" prefWidth="642.0" spacing="10.0">
+                           <children>
+                              <VBox prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q1. The teacher shows knowledge and understanding" />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r1d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r1c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r1b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r1a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q2.The Teacher plans effectively and sets clear objective of the course material" />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r2d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r2c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r2b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r2a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="106.0" prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q3. The teacher use differnet medium of Instructions " />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r3d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r3c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r3b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r3a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="202.0" prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q4. The teacher Explain the course material effectively" />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r4d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r4c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r4b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r4a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="298.0" prefHeight="85.0" prefWidth="558.0" style="-fx-background-color: #f8fae6;">
+                                 <children>
+                                    <Label prefHeight="43.0" prefWidth="655.0" text="          Q5.  The teacher attend class on time " />
+                                    <HBox alignment="CENTER" prefHeight="26.0" prefWidth="656.0" spacing="30.0">
+                                       <children>
+                                          <RadioButton fx:id="r5d" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="4" />
+                                          <RadioButton fx:id="r5c" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="3" />
+                                          <RadioButton fx:id="r5b" layoutX="102.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="2" />
+                                          <RadioButton fx:id="r5a" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="1" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </FlowPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
